@@ -14,106 +14,134 @@
 <body>
     <a name="arriba"></a>
     <header>
-        
-            <nav>
-                <a href="index.html">Inicio</a>
-                <a href="sistemasolar.html">Sistema Solar</a>
-                <a href="#">Galaxias</a>
-                <a href="#">Constelaciones</a>
-                <a href="#">Estrellas</a>
-                <a href="Contacto.html">Contacto</a>
-            </nav>
-            <section class="textoprincipal">
-                <h1>Contacto</h1>
-                <h2>Si querés más info, rellená el formulario</h2>
-                </section>
-            <div class="ola" style="height: 150px; overflow: hidden;">
-                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                    <path d="M-0.27,36.03 C240.12,282.73 314.61,-97.19 501.41,53.80 L500.00,150.00 L0.00,150.00 Z"
-                        style="stroke: none; fill: rgb(255, 255, 255);">
-                    </path>
-                </svg>
-        
+
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="sistemasolar.html">Sistema Solar</a>
+            <a href="#">Galaxias</a>
+            <a href="#">Constelaciones</a>
+            <a href="#">Estrellas</a>
+            <a href="Contacto.html">Contacto</a>
+        </nav>
+        <section class="textoprincipal">
+            <h1>Contactános</h1>
+        </section>
+        <div class="ola" style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M-0.27,36.03 C240.12,282.73 314.61,-97.19 501.41,53.80 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgb(255, 255, 255);">
+                </path>
+            </svg>
+
         </div>
     </header>
 
     <main>
-        <section class="contenedor">
-            
+        <section class="contenedor portada">
+            <h1 class="tituloform">Rellená el siguiente formulario para más información</h1>
+            <div class="contenedor-portada">
+
                 <div class="contenedor-texto">
- 
-                    <div class="contact_form">
+                    <br>
+                    <br>
 
-                        <div>      
-                          <h1>Contacto</h1>
-                                                
+                    <form action="">
+                    
+                        <fieldset>
+                            <legend> Rellená con tus datos </legend>
+                            <br>
+                          <div class="centrarformulario">
+                            <p>
+                                <label for="">Nombre <span>*</span></label><br>
+                                <input type="text" id="nombre" name="nombre" required="obligatorio" size="30"
+                                    maxlength="25" placeholder="Escribe tu Nombre">
+                            </p>
+                            <p>
+                                <label for="email">Email <span>*</span></label> <br>
+                                <input type="email" required="obligatorio" placeholder="Escribe tu Email" size="30">
+                            </p>
+
+                            <p>
+                                <label for="telefono">Teléfono</label><br>
+                                <input type="tel" placeholder="Escribe tu teléfono" size="30">
+                            </p>
+                            <p>
+                                <label for="">Sitio Web</label><br>
+                                <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web" size="30">
+                            </p>
+
+                            <p>
+                                <label for="">Asunto <span>*</span></label><br>
+                                <input type="text" required="obligatorio" size="30" maxlength="25"
+                                    placeholder="Escribe el Asunto">
+                            </p>
+
+                            <p>
+                                <label for="mensaje">Mensaje <span>*</span> </label> <br>
+                                <textarea cols="30" rows="10" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                            </p>
+                            <br>
+                            <button type="submit" value="Enviar Datos"><p>Enviar</p></button>
                             
-                              <form action="./enviar.php" method="post">       
-                    
-                                
-                                    <p>
-                                      <label for="nombre">Nombre
-                                        <span>*</span>
-                                      </label>
-                                        <input type="text"  required="obligatorio" placeholder="Escribe tu nombre">
-                                    </p>
-                                  
-                                    <p>
-                                      <label for="email">Email
-                                        <span >*</span>
-                                      </label>
-                                        <input type="email" required="obligatorio" placeholder="Escribe tu Email">
-                                    </p>
-                                
-                                    <p>
-                                      <label for="telefono">Teléfono
-                                      </label>
-                                        <input type="tel"  placeholder="Escribe tu teléfono">
-                                    </p>    
-                                  
-                                    <p>
-                                      <label for="website">Sitio web
-                                      </label>
-                                        <input type="url" placeholder="Escribe la URL de tu web">
-                                    </p>    
-                                  
-                                    <p>
-                                      <label for="asunto">Asunto
-                                        <span >*</span>
-                                      </label>
-                                    
-                                      <input type="text" required="obligatorio" placeholder="Escribe un asunto">
-                                    </p>    
-                                  
-                                    <p>
-                                      <label for="mensaje">Mensaje
-                                        <span >*</span>
-                                      </label>                     
-                                                        <textarea required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea> 
-                                    </p>                    
-                                  
-                                   <button type="submit" style="margin-right: 30px;"><p>Enviar</p></button>
-                    
-                                    <p class="aviso">
-                                      <span> * </span>los campos son obligatorios.
-                                    </p>          
-                                
-                              </form>
-    
-                            </div>  
-    
-                                
-                        </div>
-                        <a href="#arriba">Ir Arriba</a>
-                        
-    
-                </div>
-            
-        </section>
-        
-    </main>
+                            <br>
+                            <br>
+                            <p>
+                                <span> * </span>los campos son obligatorios.
+                            </p>
+                            <br>
 
-    
+                        </div>
+
+                        </fieldset>
+                    
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <section class="navegador">
+            <div class="contenedor">
+                <h2 class="titulo">¿Sobre qué quieres saber?</h2>
+                <div class="galeria">
+                    <div class="imagen-galeria">
+                        <img src="img/galaxia1.png" alt="">
+                        <div class="flotador-galeria">
+                            <img src="img/icono.png" alt="">
+                            <p>Galaxias</p>
+                        </div>
+                    </div>
+                    <div class="imagen-galeria">
+                        <img src="img/estrellas.jpg" alt="">
+                        <div class="flotador-galeria">
+                            <img src="img/icono.png" alt="">
+                            <p>Estrellas</p>
+                        </div>
+                    </div>
+                    <div class="imagen-galeria">
+                        <img src="img/planetas.jpg" alt="">
+                        <div class="flotador-galeria">
+                            <img src="img/icono.png" alt="">
+                            <a href="sistemasolar.html">
+                                <p>Sistema Solar</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="imagen-galeria">
+                        <img src="img/constelaciones.jpg" alt="">
+                        <div class="flotador-galeria">
+                            <img src="img/icono.png" alt="">
+                            <p>Constelaciones</p>
+                        </div>
+                    </div>
+                    <a href="#arriba">Ir Arriba</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
 </body>
 
 </html>

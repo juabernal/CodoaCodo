@@ -194,9 +194,6 @@ header .textoprincipal{
     transform: scale(1);
 }
 
-* {
-    font-family: sans-serif;
-  }
   
   .content-table {
     border-collapse: collapse;
