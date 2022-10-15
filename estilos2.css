@@ -234,3 +234,10 @@ header .textoprincipal{
     color: #bd5c1b;
   }
   
+  .errordevalidación{
+    width: 200px;
+    text-align: center;
+    margin:auto;
+    color:#1a2a6c;
+    padding-top: 20px;
+  }

@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="img/galaxia.png" type="image/x-icon">
     <link rel="stylesheet" href="./contactos.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -38,55 +39,53 @@
 
     <main>
         <section class="contenedor portada">
-            <h1 class="tituloform">Rellená el siguiente formulario para más información</h1>
+            <h1 class="tituloform">Escribínos para más información</h1>
             <div class="contenedor-portada">
 
                 <div class="contenedor-texto">
                     <br>
                     <br>
-
-                    <form action="">
+        
+                    <form name="fvalida" method="post" id="formulario" onsubmit="return validardatos();">
                     
                         <fieldset>
                             <legend> Rellená con tus datos </legend>
                             <br>
                           <div class="centrarformulario">
+                            <!-- para la validación se sacó required="obligatorio" en los obligatorios -->
                             <p>
                                 <label for="">Nombre <span>*</span></label><br>
-                                <input type="text" id="nombre" name="nombre" required="obligatorio" size="30"
-                                    maxlength="25" placeholder="Escribe tu Nombre">
+                                <input type="text" id="nombre" name="nombre" size="30"
+                                    maxlength="25" required="obligatorio" placeholder="Escribe tu Nombre">
                             </p>
                             <p>
                                 <label for="email">Email <span>*</span></label> <br>
-                                <input type="email" required="obligatorio" placeholder="Escribe tu Email" size="30">
+                                <input type="email" id="email" name="email" required="obligatorio" placeholder="Escribe tu Email" size="30">
                             </p>
 
                             <p>
                                 <label for="telefono">Teléfono</label><br>
-                                <input type="tel" placeholder="Escribe tu teléfono" size="30">
+                                <input type="telefono" id="telefono" name="telefono" placeholder="Escribe tu teléfono" size="30">
                             </p>
-                            <p>
-                                <label for="">Sitio Web</label><br>
-                                <input type="url" id="website" name="website" placeholder="Escribe la URL de tu web" size="30">
-                            </p>
-
+                            
                             <p>
                                 <label for="">Asunto <span>*</span></label><br>
-                                <input type="text" required="obligatorio" size="30" maxlength="25"
-                                    placeholder="Escribe el Asunto">
+                                <input type="text" id="asunto" name="asunto" size="30" maxlength="25"
+                                required="obligatorio" placeholder="Escribe el Asunto">
                             </p>
 
                             <p>
-                                <label for="mensaje">Mensaje <span>*</span> </label> <br>
-                                <textarea cols="30" rows="10" required="obligatorio" placeholder="Deja aquí tu comentario..."></textarea>
+                                <label for="">Mensaje <span>*</span> </label> <br>
+                                <input class="mensaje" id="mensaje" required="obligatorio" name="mensaje" placeholder="Deja aquí tu comentario...">
                             </p>
                             <br>
-                            <button type="submit" value="Enviar Datos"><p>Enviar</p></button>
+                            <button type="submit" onclick="validarEnviar()"><p>Enviar</p></button>
+                        
                             
                             <br>
                             <br>
                             <p>
-                                <span> * </span>los campos son obligatorios.
+                                <span> (*) </span> Los campos son obligatorios.
                             </p>
                             <br>
 
@@ -96,12 +95,15 @@
                     
                     </form>
 
-
-
-
-                </div>
+                    
+                        </div>
+        
             </div>
         </section>
+
+        <script src="Js/validacionform.js"></script>
+
+
         <section class="navegador">
             <div class="contenedor">
                 <h2 class="titulo">¿Sobre qué quieres saber?</h2>
@@ -139,9 +141,10 @@
                     <a href="#arriba">Ir Arriba</a>
                 </div>
             </div>
-        </section>
+        </section> 
 
     </main>
+    
 </body>
 
 </html>
