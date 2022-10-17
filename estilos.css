@@ -94,9 +94,13 @@ header .textoprincipal{
 }
 
 .imagen-principal{
-    width: 85%;
+    width: 65%;
+    height: 50%;
+    margin-right: 50px;
+    margin-left: 5px;
+    float: left;
+    border-radius: 5px;
 }
-
 
 .contenedor-texto{
     width: 85%;
@@ -179,3 +183,4 @@ header .textoprincipal{
 .imagen-galeria:hover .flotador-galeria{
     transform: scale(1);
 }
+
