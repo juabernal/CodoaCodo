@@ -11,7 +11,16 @@ body{
 
 .contenedor{
     padding: 60px 0;
-    width: 90%;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.contenedor-galeria{
+    padding: 60px 0;
+    width: 100%;
     max-width: 1000px;
     margin: auto;
     overflow: hidden;
@@ -51,6 +60,7 @@ nav > a{
     font-weight: 300;
     text-decoration: none;
     margin-right: 10px;
+    margin-bottom: 10px;
 
 }
 
@@ -59,19 +69,24 @@ nav > a:hover{
 
 }
 
+header {
+   display: flex;
+   flex-direction: column; 
+}
+
 header .textoprincipal{
-    display: flex;
     height: 450px;
     width: 100%;
+    margin-top: 10px;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     text-align: center;
 }
 
 .textoprincipal h1{
-    font-size: 50px;
+    font-size: 32px;
     color: white;
+    text-align: center;
 }
 
 .textoprincipal h2{
@@ -97,7 +112,7 @@ header .textoprincipal{
     width: 65%;
     height: 50%;
     margin-right: 50px;
-    margin-left: 5px;
+    margin-left: 50px;
     float: left;
     border-radius: 5px;
 }
@@ -184,3 +199,98 @@ header .textoprincipal{
     transform: scale(1);
 }
 
+
+
+
+@media screen and (max-width:992px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-portada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .imagen-principal{
+        width: 85%;
+    }
+
+  /*
+    .imagen-galeria{
+        width: 40%;
+    }*/
+
+    .contenedor-portada .contenedor-texto{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:576px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+  /*
+    .imagen-galeria{
+        width: 90%;
+    }*/
+}
+
+@media screen and (max-width:310px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+/*
+    .imagen-galeria{
+        width: 90%;
+    }*/
+}

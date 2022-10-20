@@ -245,3 +245,88 @@ header .textoprincipal{
   .parrafojustificado{
     text-align: justify;
   }
+  
+@media screen and (max-width:992px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-portada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .imagen-principal{
+        width: 85%;
+    }
+
+
+    .contenedor-portada .contenedor-texto{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:576px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+   
+}
+
+@media screen and (max-width:310px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+   
+}

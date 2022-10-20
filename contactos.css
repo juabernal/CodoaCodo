@@ -143,7 +143,8 @@ header .textoprincipal{
 /* Se Agrega lo referido al formulario */
 input{
     background-color: #fbfbfb; 
-    width: 408px; 
+    width: 350px; 
+    min-width: 300px;
     height: 40px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -157,7 +158,8 @@ input{
 
   textarea{
     background-color: #fbfbfb; 
-    width: 405px; 
+    width: 350px; 
+    min-width: 300px;
     height: 150px; 
     border-radius: 5px;  
     border-style: solid; 
@@ -190,10 +192,146 @@ button p{
   
 .centrarformulario {
     text-align: center;
+    
+    
 }
   
  .mensaje {
     height: 100px;
  } 
   
+ .formadaptado{
+    width: 80%;
+ }
+
+ .inputs{
+    width: 80%;
+ }
   
+@media screen and (max-width:992px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-portada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .imagen-principal{
+        width: 85%;
+    }
+
+
+    .contenedor-portada .contenedor-texto{
+        width: 85%;
+    }
+ 
+    .textarea{
+        width:90%;
+    }
+    .input {
+        width: 90%;
+    }
+
+    .mensaje{
+        width: 80%;
+    }
+    .formadaptado{
+        width: 100%;
+     }
+     .inputs{
+        width: 80%;
+     }
+}
+
+@media screen and (max-width:576px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+    .textarea{
+        width:95%;
+    }
+    .input {
+        width: 90%;
+    }
+
+.inputs{
+   width: 80%;
+}
+    .mensaje{
+        width: 80%;
+    }
+    .formadaptado{
+        width: 100%;
+     }
+}
+
+@media screen and (max-width:310px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+.inputs{
+   width: 80%;
+}
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+    .textarea{
+        width:90%;
+    }
+    .input {
+        width: 90%;
+    }
+    .mensaje{
+        width: 80%;
+    }
+    .formadaptado{
+        width: 100%;
+     }
+}

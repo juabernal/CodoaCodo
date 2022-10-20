@@ -106,7 +106,7 @@ header .textoprincipal{
 .imagen-principal{
     width: 85%;
     margin-right: 50px;
-    margin-left: 5px;
+    margin-left: 50px;
 }
 
 .contenedor-texto{
@@ -221,3 +221,106 @@ header .textoprincipal{
 .parrafojustificado{
     text-align: justify;
   }
+
+  
+@media screen and (max-width:992px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-portada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .centrarvideo{
+        
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .info{
+        font-size: 100%;
+    }
+
+    .imagen-principal{
+        width: 85%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 85%;
+        
+    }
+   
+}
+
+@media screen and (max-width:576px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .info{
+        font-size: 60%;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width:310px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    
+    .info{
+        font-size: 50%;
+    }
+
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+    
+}

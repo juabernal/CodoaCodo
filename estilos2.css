@@ -199,7 +199,7 @@ header .textoprincipal{
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
-    min-width: 400px;
+    min-width: 300px;
     border-radius: 5px 5px 0 0;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -241,3 +241,88 @@ header .textoprincipal{
     color:#1a2a6c;
     padding-top: 20px;
   }
+  
+@media screen and (max-width:992px){
+    header{
+        background-position: center;
+
+    }
+
+    .contenedor-portada{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+
+    .imagen-principal{
+        width: 85%;
+    }
+
+
+    .contenedor-portada .contenedor-texto{
+        width: 85%;
+    }
+    
+}
+
+@media screen and (max-width:576px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+   
+}
+
+@media screen and (max-width:310px){
+    nav{
+        text-align: center;
+        
+    }
+
+    nav > a{
+        margin-right: 8px;
+    }
+
+    .textoprincipal h1{
+        font-size: 30px;
+    }
+
+    .textoprincipal h2{
+        font-size: 20px;
+    }
+    
+    .imagen-principal{
+        margin-bottom: 55px;
+        width: 90%;
+    }
+
+    .contenedor-portada .contenedor-texto{
+        width: 90%;
+    }
+
+   
+}
